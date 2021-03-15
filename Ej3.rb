@@ -6,4 +6,4 @@ while i<= 10
   s=s+i
   i=i+1
 end
-puts'La suma es:' + s.to_s
+puts "La suma es: #{s}"
