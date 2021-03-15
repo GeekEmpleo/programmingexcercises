@@ -5,7 +5,7 @@ a=gets.to_i
 b=gets.to_i
 
 if a>b
-  puts 'The correct order of the numbers is:' + b.to_s + ',' + a.to_s
+  puts "The correct order of the numbers is: #{b} , #{a}"
 else 
-  puts 'The correct order of the numbers is:' + a.to_s + ',' + b.to_s
+  puts "The correct order of the numbers is: #{a} , #{b}"
 end
