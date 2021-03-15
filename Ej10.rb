@@ -1,16 +1,18 @@
 puts 'Welcome'
-puts 'parqueadero'
-puts 'Enter hora de entrada'
-hora_entrada=gets.to_i
-puts 'Enter hora de salida'
-hora_salida=gets.to_i
+puts 'Algorithm that calculates the cost of parking. It costs the first hour 1000 and the remaining 600.
+Enter the check-in time in military format'
+puts 'Check in time'
+Check_in_time=gets.to_i
+puts 'Departure time'
+Departure_time=gets.to_i
 
-minutos_parqueo= hora_salida - hora_entrada
-total_pago= 1000 + ((minutos_parqueo - 60) *10)
+minutes_parking= Departure_time= Departure_time - Check_in_time
+
+Total_to_pay= 1000 + ((minutes_parking - 60) *10)
  
-if minutos_parqueo<=60 
- puts 'El cliente debe pagar: $1000'
+if minutes_parking<=60 
+ puts 'Customer must pay: $1000'
 else 
- puts 'El cliente debe pagar: $'+ total_pago.to_s
+ puts "Customer must pay: #{Total_to_pay}"
 end
 
