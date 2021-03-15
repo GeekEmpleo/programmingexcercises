@@ -11,8 +11,7 @@ while a == b
 end
 
 if a > b
-  puts 'The mayor number is: ' + a.to_s
+  puts "The mayor number is: #{a}"
 else
-  
-  puts 'The mayor number is: ' + b.to_s
+  puts "The mayor number is: #{b}"
 end
