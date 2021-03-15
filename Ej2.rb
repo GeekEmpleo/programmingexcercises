@@ -27,11 +27,11 @@ while b==c
 end 
 
 if a>b && a>c 
-  puts 'The mayor number is: ' + a.to_s
+  puts "The mayor number is: #{a}"
 else 
   if b>c 
-    puts 'The mayor number is: ' + b.to_s
+    puts "The mayor number is: #{b}"
   else 
-    puts 'The mayor number is: ' + c.to_s
+    puts "The mayor number is: #{c}"
   end
 end
