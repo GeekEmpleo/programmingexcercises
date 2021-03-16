@@ -1,8 +1,8 @@
 puts 'Welcome'
-puts 'velocidad de un automovil'
-puts 'Ingrese la velocidad (km/hora)'
-velocidadkmh=gets.to_i
+puts 'Car speed (km / hour) to (m / sec)'
+puts 'Enter speed (km/hour)'
+velocitykmh=gets.to_i
 
-velocidadms= velocidadkmh * 1000 / 3600
+velocityms= velocitykmh * 1000 / 3600
 
-puts 'velocidad ' + velocidadms.to_s + ' m/seg'
+puts "Speed #{velocityms}  m/seg"
