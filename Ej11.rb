@@ -5,4 +5,4 @@ velocitykmh=gets.to_i
 
 velocityms= velocitykmh * 1000 / 3600
 
-puts "Speed #{velocityms}  m/seg"
+puts "Speed#{velocityms}  m/seg"
