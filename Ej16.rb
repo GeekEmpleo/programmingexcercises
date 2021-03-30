@@ -1,74 +1,29 @@
 puts 'Welcome'
-puts 'Cajero Automatico'
-puts 'Ingrese el valor que necesita retirar'
+puts 'ATM TibaSuiza Bank'
+puts 'Enter the amount you need to withdraw'
 n=gets.to_i
-bcincuentamil=0
-bveintemil=0
-bdiezmil=0
-bcincomil=0
-bmil=0
-mquinientos=0
-mdoscientos=0
-mcien=0
-mcincuenta=0
 
-cajero=n
+bill50=n/50_000
+leftover_50 = n-(bill50*50_000)
 
-while cajero>=50000
-  bcincuentamil=bcincuentamil+1
-  cajero=cajero-50000
-end
+bill20=leftover_50/20_000
+leftover_20 = leftover_50-(bill20*20_000)
 
-while cajero>=20000
-  bveintemil=bveintemil+1
-  cajero=cajero-20000
-end
+bill10=vueltos_20/10_000
+leftover_10 = leftover_20-(bill10*10_000)
 
-while cajero>=10000
-  bdiezmil=bdiezmil+1
-  cajero=cajero-10000
-end
+bill5=vueltos_10/5_000
+leftover_5 = leftover_10-(bill5l*5_000)
 
-while cajero>=5000
-  bcincomil=bcincomil+1
-  cajero=cajero-5000
-end
+bill2=vueltos_5/2_000
+leftover_2 = leftover_5-(bill2*2_000)
 
-while cajero>=1000
-  bmil=bmil+1
-  cajero=cajero-1000
-end
+bill1=vueltos_2/1_000
+leftover_1 = leftover_2-(bill1*1_000)
 
-while cajero>=500
-  mquinientos=mquinientos+1
-  cajero=cajero-500
-end
+leftover_0 = leftover_1
 
-while cajero>=200
-  mdoscientos=mdoscientos+1
-  cajero=cajero-200
-end
+puts "The entered value $ #{n} equates to the following banknotes #{bcincuentamil} out of fifty thousand, 
+#{bveintemil} out of twenty thousand, #{bdiezmil} out of ten thousand, #{bcincomil} out of five thousand, #{bdosmil} out of two thousand, #{bmil} out of one thousand "
 
-while cajero>=100
-  mcien=mcien+1
-  cajero=cajero-100
-end
-
-while cajero>=50
-  mcincuenta=mcincuenta+1
-  cajero=cajero-50
-end
-
-
-
-puts "El valor ingresado $ #{n} equivale a: 
-billetes de cincuenta mil= #{bcincuentamil}
-billetes de veinte mil= #{bveintemil}  
-billetes de diez mil= #{bdiezmil} 
-billetes de cinco mil= #{bcincomil}
-billetes de mil= #{bmil}
-monedas de quinientos= #{mquinientos}
-monedas de doscientos= #{mdoscientos}
-monedas de mil= #{mcien}
-monedas de cincuenta= #{mcincuenta}
-sobran= #{cajero} unidades"
+"This bank only has banknotes $#{vueltos_0} units were not recalled"
